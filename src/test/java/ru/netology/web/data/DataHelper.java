@@ -37,4 +37,8 @@ public class DataHelper {
     public static TransferInfo getTransferInfo(String amount) {
         return new TransferInfo(amount,"5559000000000002");
     }
+
+    public static TransferInfo getReturnTransferInfo(TransferInfo original) {
+        return new TransferInfo(original.amount,"5559000000000001");
+    }
 }
